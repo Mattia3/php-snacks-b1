@@ -19,7 +19,7 @@ $hasAt = strchr($email, "@");
 // var_dump($hasDot, $hasAt);
 
 //Verifico che tutte le condizioni siano giuste
-if ($hasDot && $hasAt && strlen($name) > 3 && is_numeric($anni)) {
+if ($hasDot && $hasAt && strlen($name) >= 3 && is_numeric($anni)) {
   echo "Accesso riuscito";
 } else {
   echo "Accesso Negato";
